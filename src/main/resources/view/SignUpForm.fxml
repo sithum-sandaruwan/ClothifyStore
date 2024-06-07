@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controller.SignUpFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8cef0c2" height="375.0" layoutX="212.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="376.0" />
+      <ImageView fitHeight="208.0" fitWidth="209.0" layoutX="4.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/register.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="313.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" textAlignment="CENTER" wrappingWidth="173.90002441406273">
+         <font>
+            <Font name="Ebrima Bold" size="31.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtUsername" layoutX="241.0" layoutY="96.0" prefHeight="26.0" prefWidth="198.0" promptText="Username" text="Enter your E-mail" unFocusColor="WHITE" viewOrder="-3.0" />
+      <JFXTextField fx:id="txtUsername1" layoutX="241.0" layoutY="149.0" prefHeight="26.0" prefWidth="198.0" promptText="Username" text="Enter your username" unFocusColor="WHITE" viewOrder="-3.0" />
+      <JFXTextField fx:id="txtUsername11" layoutX="241.0" layoutY="211.0" prefHeight="26.0" prefWidth="198.0" promptText="Username" text="Enter your password" unFocusColor="WHITE" viewOrder="-3.0" />
+      <JFXTextField fx:id="txtUsername111" layoutX="241.0" layoutY="274.0" prefHeight="26.0" prefWidth="198.0" promptText="Username" text="Re-enter password" unFocusColor="WHITE" viewOrder="-3.0" />
+      <Text fill="#b40505" layoutX="240.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Password should have 8 characters" />
+   </children>
+</AnchorPane>

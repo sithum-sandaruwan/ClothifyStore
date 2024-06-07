@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="edu.icet.pos.controller.LoginFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controller.LoginFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a7cef2c7" height="352.0" layoutX="269.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="311.0" />
+      <Text fill="#fcf3f3" layoutX="47.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO " textAlignment="CENTER" wrappingWidth="162.775390625">
+         <font>
+            <Font name="Ebrima Bold" size="31.0" />
+         </font>
+      </Text>
+      <Text fill="#f4e32a" layoutX="35.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLOTHIFY" textAlignment="CENTER" wrappingWidth="181.0000000000001">
+         <font>
+            <Font name="Arial Black" size="31.0" />
+         </font>
+      </Text>
+      <Text fill="#fcf3f3" layoutX="270.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="98.77536010742188">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtUsername" layoutX="283.0" layoutY="99.0" prefHeight="26.0" prefWidth="198.0" promptText="Username" unFocusColor="WHITE" viewOrder="-3.0" />
+      <JFXTextField layoutX="283.0" layoutY="149.0" prefHeight="28.0" prefWidth="198.0" promptText="Password" unFocusColor="WHITE" viewOrder="-3.0" />
+      <ImageView fitHeight="165.0" fitWidth="188.0" layoutX="38.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/brand.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="209.0" fitWidth="248.0" layoutX="378.0" layoutY="87.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/fashion.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="288.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" textAlignment="CENTER" wrappingWidth="271.5000000000002">
+         <font>
+            <Font name="Ebrima Bold" size="31.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="389.0" layoutY="238.4" prefHeight="10.0" prefWidth="70.0" ripplerFill="#fae500" style="-fx-background-color: yellow; -fx-border-color: black; -fx-border-radius: 3;" text="Log In" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.topAnchor="238.4">
+         <font>
+            <Font name="Ebrima" size="12.0" />
+         </font>
+         <padding>
+            <Insets top="1.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <Line endX="40.0" endY="3.0517578125E-5" layoutX="341.0" layoutY="250.0" startX="-60.399993896484375" startY="3.0517578125E-5" />
+      <Line endX="40.0" endY="3.0517578125E-5" layoutX="529.0" layoutY="251.0" startX="-60.399993896484375" startY="3.0517578125E-5" />
+      <Text layoutX="297.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you haven't account..?" />
+      <Hyperlink layoutX="439.0" layoutY="294.0" prefHeight="12.0" prefWidth="98.0" text="Create Account" textFill="#b72cbf" underline="true" />
+   </children>
 </AnchorPane>
