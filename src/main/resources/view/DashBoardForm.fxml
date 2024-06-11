@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controller.DashBoardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="469.0" layoutY="550.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="468.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
+      <JFXButton layoutX="864.0" layoutY="278.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: yellow;" text="Suppliers">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="470.0" layoutY="376.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
+      <JFXButton layoutX="867.0" layoutY="458.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: yellow;" text="Products">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="866.0" layoutY="638.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: yellow;" text="Orders">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField editable="false" layoutX="166.0" layoutY="171.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="696.0" layoutX="11.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="395.0" />
+      <ImageView fitHeight="117.0" fitWidth="145.0" layoutX="70.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/working.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="209.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello User..!!!" wrappingWidth="186.83233642578125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="56.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Id :" wrappingWidth="91.8990478515625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="153.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Information" wrappingWidth="252.9656982421875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="151.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduction" wrappingWidth="252.9656982421875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Settings" wrappingWidth="252.9656982421875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="159.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help..?" wrappingWidth="126.0323486328125">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="65.0" fitWidth="56.0" layoutX="81.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/information-board.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="57.0" layoutX="83.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/light-bulb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="82.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/setting.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="81.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/support.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="467.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
+      <JFXButton layoutX="862.0" layoutY="96.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: yellow;" text="Employees">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="476.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of employees as of today :" wrappingWidth="388.43243408203125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="887.0" layoutY="32.0" unFocusColor="#8cbeed" />
+      <Text layoutX="478.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Suppliers as of today :" wrappingWidth="388.43243408203125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="481.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Products as of today :" wrappingWidth="388.43243408203125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="481.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Orders as of today :" wrappingWidth="388.43243408203125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <JFXTextField editable="false" layoutX="877.0" layoutY="219.0" unFocusColor="#8cbeed" />
+      <JFXTextField editable="false" layoutX="874.0" layoutY="405.0" unFocusColor="#8cbeed" />
+      <JFXTextField editable="false" layoutX="844.0" layoutY="570.0" unFocusColor="#8cbeed" />
+   </children>
+</AnchorPane>
