@@ -1,8 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-n
->src/main/java/edu/icet/pos/controller/LoginFormController.java,4\a\4a6eddab549a057cb3270abb97e3ec16c383afc8
 G
 src/main/java/Main.java,e\4\e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
 Å
@@ -23,8 +21,6 @@ Q.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c
 w
 G.idea/sonarlint/issuestore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e,a\e\ae9ddf453f55affea2d6b9e3973cac1eb2efb4e1
 Å
-Q.idea/sonarlint/securityhotspotstore/4/a/4a6eddab549a057cb3270abb97e3ec16c383afc8,3\9\39d637d3c4c69b5ceae0eb74d1964077ac010d80
-Å
 Q.idea/sonarlint/securityhotspotstore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0,b\b\bbf202272a96de5cd6b6828ffdc55fb3ce45289c
 w
 G.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0,f\0\f0e0f9cec86fe4b939ae22be5264c758801eb28f
@@ -40,12 +36,8 @@ Q.idea/sonarlint/securityhotspotstore/8/6/863e0292fd7e9b3e74dafd6cc01f73ba763464
 Q.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302,3\0\30205a209c6ce77c4cfc19a09e6f57c588b7fb88
 w
 G.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302,e\d\ed67eb178d523a4b3f117dcbe0eda5196367ceec
-o
-?src/main/java/edu/icet/pos/controller/SignUpFormController.java,b\d\bd305d749cd77cd779fdd333dffa797325bb398a
 Å
 Q.idea/sonarlint/securityhotspotstore/e/d/ed67eb178d523a4b3f117dcbe0eda5196367ceec,9\a\9a43762646d6c9d33ccdc2a92292c8078d1078f0
-w
-G.idea/sonarlint/issuestore/3/9/39d637d3c4c69b5ceae0eb74d1964077ac010d80,6\4\64dd81bf32e6357ebff36f52617882b510f5527e
 w
 G.idea/sonarlint/issuestore/e/d/ed67eb178d523a4b3f117dcbe0eda5196367ceec,8\a\8a6dae537be9f47878c6964c6ee40cab0ca75e28
 w
@@ -63,8 +55,6 @@ Q.idea/sonarlint/securityhotspotstore/3/0/30205a209c6ce77c4cfc19a09e6f57c588b7fb
 Å
 Q.idea/sonarlint/securityhotspotstore/3/0/30f9777ea696a18aa49d3e9967e93a4276065227,7\4\74a0e90fa145d4cf4f2495c6a426d2628d6f6ea6
 Å
-Q.idea/sonarlint/securityhotspotstore/3/9/39d637d3c4c69b5ceae0eb74d1964077ac010d80,b\5\b5e60d685d2a86f92f60efa31b1cecfc499f7b9c
-Å
 Q.idea/sonarlint/securityhotspotstore/1/0/10f2119b18de4c2d93011c2acd27301df22c2983,1\8\181a24cd338adcdf010bd6ca3ad609e05d52c0c5
 w
 G.idea/sonarlint/issuestore/9/0/909762385fc6eb20f922a91c6865741308b57f2c,c\e\ce7799643a95553c6bee1d403d6cb738907a7f2c
@@ -72,8 +62,6 @@ w
 G.idea/sonarlint/issuestore/9/0/90b119420229d7039add28319c2a0ee951218c45,6\1\6102d4a9076bf5ba40a3a8ab9abadeac756b8db2
 Å
 Q.idea/sonarlint/securityhotspotstore/a/e/ae9ddf453f55affea2d6b9e3973cac1eb2efb4e1,e\3\e36d3b35b0aa033dfcf067b2cd16117a306b1e80
-Å
-Q.idea/sonarlint/securityhotspotstore/b/d/bd305d749cd77cd779fdd333dffa797325bb398a,9\6\96e4c104e2d49fb7cba193bf1a79741e5d75aa71
 w
 G.idea/sonarlint/issuestore/f/0/f0e0f9cec86fe4b939ae22be5264c758801eb28f,5\0\50e216b4439d2538168c3ddca9c0c2fe23bd1c02
 w
@@ -92,8 +80,6 @@ G.idea/sonarlint/issuestore/0/c/0c4799549ebca80c86406fd218445fef27b61acc,9\3\93
 Q.idea/sonarlint/securityhotspotstore/9/0/90b119420229d7039add28319c2a0ee951218c45,9\9\999f88f38599821632cc6a86be75b805a576d3ed
 w
 G.idea/sonarlint/issuestore/1/0/10f2119b18de4c2d93011c2acd27301df22c2983,4\6\46b1e47422dc9bb27d66232520441f7cb61c8c1d
-n
->src/main/java/edu/icet/pos/controller/DashBoardController.java,2\a\2ace0219392296af17cde179a8f87b64c88a612f
 w
 G.idea/sonarlint/issuestore/4/8/4863281891d32ef796d6f680d78cb100e7c940be,d\8\d83eba5ea733cb5c0531ef72186b1c1f282329c8
 w
@@ -106,8 +92,6 @@ G.idea/sonarlint/issuestore/4/6/46b1e47422dc9bb27d66232520441f7cb61c8c1d,9\b\9b
 Q.idea/sonarlint/securityhotspotstore/b/7/b74e8c230459235775e2f7c88126ddb0ac14fa2d,1\5\1526f2f5546b85ba5521a75408a65fe0894afe7b
 Å
 Q.idea/sonarlint/securityhotspotstore/1/8/181a24cd338adcdf010bd6ca3ad609e05d52c0c5,1\7\1758a7105542db541fde5f6e66703502c64d1eaf
-Å
-Q.idea/sonarlint/securityhotspotstore/b/5/b5e60d685d2a86f92f60efa31b1cecfc499f7b9c,6\4\643ba9069d7c8f570875e00289eac259e64d2a25
 Å
 Q.idea/sonarlint/securityhotspotstore/e/0/e0ea4108d198a3d2e4e87c48063db9d2bffad652,e\8\e80c14b69715617f8d7294873564dcb2ae4db8bb
 Å
@@ -129,13 +113,9 @@ G.idea/sonarlint/issuestore/6/1/6102d4a9076bf5ba40a3a8ab9abadeac756b8db2,e\f\ef
 w
 G.idea/sonarlint/issuestore/6/2/6248197ca7a44d8bc42b5bd6cd80cd6e99143261,3\a\3a6edaa19b768031af6c9381400d36a19f99cb32
 w
-G.idea/sonarlint/issuestore/6/4/64dd81bf32e6357ebff36f52617882b510f5527e,6\3\63217423cbd34d5bc4242d796e4cf00cd5c69753
-w
 G.idea/sonarlint/issuestore/b/7/b74e8c230459235775e2f7c88126ddb0ac14fa2d,f\b\fb161f50f4ccaeff05773bcbbd14483b77364e1c
 w
 G.idea/sonarlint/issuestore/1/8/181a24cd338adcdf010bd6ca3ad609e05d52c0c5,6\8\68417499ef63cfb1c3caaad535663fc582ddf2ba
-w
-G.idea/sonarlint/issuestore/b/5/b5e60d685d2a86f92f60efa31b1cecfc499f7b9c,b\8\b8af27bd6dc4853dcb982f4aff02175c5da5c66b
 Å
 Q.idea/sonarlint/securityhotspotstore/f/c/fc51aad2f1ebe72ffedf49fa3dfea24b513ff6fe,9\2\92f6b8ed4f7b37c3c344c4307f2fbb1f9b83c15c
 Å
@@ -150,8 +130,6 @@ w
 G.idea/sonarlint/issuestore/9/a/9a43762646d6c9d33ccdc2a92292c8078d1078f0,4\7\47088ae03671a1d73d507de29e92ae465dbe8281
 w
 G.idea/sonarlint/issuestore/9/3/93f8de54e7d0fbcd1bc646516a4131f497b38a3f,7\5\754efd08ae375a40be1aadaec685ffc28e656289
-w
-G.idea/sonarlint/issuestore/9/6/96e4c104e2d49fb7cba193bf1a79741e5d75aa71,8\3\8357d004b30656b1d8a49374b5fbd8bfa14dc8f6
 Å
 Q.idea/sonarlint/securityhotspotstore/c/e/ce7799643a95553c6bee1d403d6cb738907a7f2c,2\7\279a79a9d9151a9959cd88cbae53cc58d712a5b2
 Å
@@ -160,8 +138,6 @@ Q.idea/sonarlint/securityhotspotstore/5/0/50e216b4439d2538168c3ddca9c0c2fe23bd1c
 Q.idea/sonarlint/securityhotspotstore/c/9/c95740aecd481f856c4db0281378b18fe81c01a4,d\5\d56a4de3e76719b56a9d10ae4903b3458d789252
 Å
 Q.idea/sonarlint/securityhotspotstore/6/2/6248197ca7a44d8bc42b5bd6cd80cd6e99143261,e\6\e68af489be556b4e70e080dbc49a41420ffa3c95
-Å
-Q.idea/sonarlint/securityhotspotstore/6/4/64dd81bf32e6357ebff36f52617882b510f5527e,c\9\c947d6f8774ea12daab682fcc49fd5c43a2319bb
 Å
 Q.idea/sonarlint/securityhotspotstore/6/7/67eaf978e530588b1f14f51aeca296c2b659e272,3\1\31c845172c50fd6cd68741f1ca4248d96436f9df
 Å
@@ -177,13 +153,9 @@ Q.idea/sonarlint/securityhotspotstore/7/4/74a0e90fa145d4cf4f2495c6a426d2628d6f6e
 Å
 Q.idea/sonarlint/securityhotspotstore/9/3/93f8de54e7d0fbcd1bc646516a4131f497b38a3f,5\3\5395ff624a15093f7d4ee34962027c767799e7fb
 Å
-Q.idea/sonarlint/securityhotspotstore/9/6/96e4c104e2d49fb7cba193bf1a79741e5d75aa71,2\5\25d9b670c764b76c1f5bae772d50288c9de84fa2
-Å
 Q.idea/sonarlint/securityhotspotstore/9/9/999f88f38599821632cc6a86be75b805a576d3ed,c\7\c776fd4d3a6f38ab22c29e7f97c59474a1704c1e
 Å
 Q.idea/sonarlint/securityhotspotstore/9/a/9a43762646d6c9d33ccdc2a92292c8078d1078f0,5\6\5638eca1288f3c9951eed1818124cbc4e2ba7f42
-Å
-Q.idea/sonarlint/securityhotspotstore/2/a/2ace0219392296af17cde179a8f87b64c88a612f,0\5\053e72fdc7542f59c42915b24f99c8dd5662bbf3
 w
 G.idea/sonarlint/issuestore/d/4/d49052b5c99e4aed190a06219a866f7dc2d8b67d,4\9\4910282f94096e0d859ca1d0a3b106318220a9c9
 Å
@@ -196,3 +168,17 @@ w
 G.idea/sonarlint/issuestore/8/3/83c97b69f1983e71cd804a5894ec167e14452d2c,8\0\803c41fb12a3cab769ec66c457d175aa6bdf5b0c
 w
 G.idea/sonarlint/issuestore/8/4/84e95bd0ea795e5307464eb72e7bd95d9f673c00,3\5\356e6a002afeb5e7f9005a0f3c151fd17729b92e
+p
+@src/main/java/edu/icet/pos/controllers/SignUpFormController.java,c\3\c30ad2114bc174a8b241aed0e5719dd5c7833542
+o
+?src/main/java/edu/icet/pos/controllers/DashBoardController.java,f\e\fe5122f69a6e39fda48e8f8328a1f0fe289caa38
+o
+?src/main/java/edu/icet/pos/controllers/LoginFormController.java,1\4\142ce526327c2e69f7b3a7ae8347a7878d6f2095
+s
+Csrc/main/java/edu/icet/pos/controllers/ManageEmpFormController.java,f\a\fa73818155d16d48fa32f2257a9e9b95a4d47076
+s
+Csrc/main/java/edu/icet/pos/controllers/ManageSupFormController.java,1\f\1faa58257a511c78e074c2bc617ccd5ed7934900
+x
+Hsrc/main/java/edu/icet/pos/controllers/ManageProductsFormController.java,4\9\4946ab6c73428ae7275ade67571dc34876117352
+v
+Fsrc/main/java/edu/icet/pos/controllers/ManageOrdersFormController.java,1\a\1a6280fd5be06c6ddae987c6843025621a54170d

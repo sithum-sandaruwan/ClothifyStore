@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #0984e3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controllers.ManageEmpFormController">
+   <children>
+      <Text layoutX="56.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE EMPLOYEES" wrappingWidth="546.9367065429688">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="54.0" fitWidth="63.0" layoutX="23.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitHeight="502.0" fitWidth="1041.0" layoutX="-12.0" layoutY="254.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Employees.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="602.0" layoutY="228.0" prefHeight="59.0" prefWidth="249.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Add New Employee" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="802.0" layoutY="333.0" prefHeight="59.0" prefWidth="231.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Update Details" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="823.0" layoutY="476.0" prefHeight="59.0" prefWidth="198.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Delete Details" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="672.0" layoutY="611.0" prefHeight="59.0" prefWidth="199.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="View Details" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

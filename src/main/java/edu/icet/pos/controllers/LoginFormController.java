@@ -1,4 +1,4 @@
-package edu.icet.pos.controller;
+package edu.icet.pos.controllers;
 
 import com.jfoenix.controls.JFXTextField;
 

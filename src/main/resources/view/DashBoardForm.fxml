@@ -10,11 +10,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controller.DashBoardController">
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #0984e3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controllers.DashBoardController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="469.0" layoutY="550.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="468.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
-      <JFXButton layoutX="864.0" layoutY="278.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: yellow;" text="Suppliers">
+      <JFXButton layoutX="864.0" layoutY="278.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="Suppliers" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -23,7 +23,7 @@
          </cursor>
       </JFXButton>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="470.0" layoutY="376.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
-      <JFXButton layoutX="867.0" layoutY="458.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: yellow;" text="Products">
+      <JFXButton layoutX="867.0" layoutY="458.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="Products" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -31,7 +31,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="866.0" layoutY="638.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: yellow;" text="Orders">
+      <JFXButton layoutX="866.0" layoutY="638.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="Orders" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -97,7 +97,7 @@
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="467.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
-      <JFXButton layoutX="862.0" layoutY="96.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: yellow;" text="Employees">
+      <JFXButton layoutX="862.0" layoutY="96.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Employees" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -110,7 +110,10 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="887.0" layoutY="32.0" unFocusColor="#8cbeed" />
+      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="874.0" layoutY="26.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
       <Text layoutX="478.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Suppliers as of today :" wrappingWidth="388.43243408203125">
          <font>
             <Font size="24.0" />
@@ -126,8 +129,25 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <JFXTextField editable="false" layoutX="877.0" layoutY="219.0" unFocusColor="#8cbeed" />
-      <JFXTextField editable="false" layoutX="874.0" layoutY="405.0" unFocusColor="#8cbeed" />
-      <JFXTextField editable="false" layoutX="844.0" layoutY="570.0" unFocusColor="#8cbeed" />
+      <ImageView fitHeight="61.0" fitWidth="43.0" layoutX="24.0" layoutY="652.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+      </ImageView>
+      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="863.0" layoutY="210.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="858.0" layoutY="396.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="837.0" layoutY="564.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
    </children>
 </AnchorPane>
