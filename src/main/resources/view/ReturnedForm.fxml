@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #0984e3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controllers.orders.ReturnedFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfc12c" height="68.0" layoutY="-1.0" stroke="#eef202" strokeType="INSIDE" width="1080.0" />
+      <Text layoutX="387.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Return Orders">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return ID :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtReturnID" fill="WHITE" layoutX="154.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtOrderID" layoutX="94.0" layoutY="201.0" prefHeight="26.0" prefWidth="337.0" promptText="Order ID">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemID" layoutX="595.0" layoutY="201.0" prefHeight="26.0" prefWidth="337.0" promptText="Item/Items ID">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtReason" layoutX="93.0" layoutY="326.0" prefHeight="26.0" prefWidth="337.0" promptText="Reason for Return">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="317.0" layoutY="487.0" onAction="#btnReturnAddOnAction" prefHeight="51.0" prefWidth="118.0" style="-fx-background-color: #f1c40f;" text="Add">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="580.0" layoutY="486.0" onAction="#btnClearFormOnAction" prefHeight="51.0" prefWidth="162.0" style="-fx-border-radius: 80; -fx-background-color: #d63031;" text="Clear Form" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="btnBack" fitHeight="62.0" fitWidth="73.0" layoutX="24.0" layoutY="648.0" mouseTransparent="true" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="3.0" spread="0.07" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <DatePicker fx:id="ReturnDate" layoutX="763.0" layoutY="343.0" prefHeight="38.0" prefWidth="241.0" promptText="DATE" />
+      <Text fill="#4d4d4d" layoutX="587.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Returned Date">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

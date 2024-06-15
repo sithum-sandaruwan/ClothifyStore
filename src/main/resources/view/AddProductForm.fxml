@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="703.0" prefWidth="1125.0" style="-fx-background-color: #0984e3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controllers.products.AddProductFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfc12c" height="68.0" layoutX="-6.0" layoutY="-2.0" stroke="#eef202" strokeType="INSIDE" width="1131.0" />
+      <Text layoutX="437.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Product" wrappingWidth="243.59442138671875">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtProductID" fill="WHITE" layoutX="172.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtProductName" layoutX="106.0" layoutY="214.0" prefHeight="26.0" prefWidth="337.0" promptText="Product Name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtProductPrize" layoutX="103.0" layoutY="330.0" prefHeight="26.0" prefWidth="337.0" promptText="Product Prize">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="761.0" layoutY="639.0" onAction="#btnAddOnAction" prefHeight="51.0" prefWidth="118.0" style="-fx-background-color: #f1c40f;" text="Add">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="923.0" layoutY="638.0" onAction="#btnClearFormOnAction" prefHeight="51.0" prefWidth="162.0" style="-fx-border-radius: 80; -fx-background-color: #d63031;" text="Clear Form" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="btnBack" fitHeight="62.0" fitWidth="73.0" layoutX="12.0" layoutY="629.0" mouseTransparent="true" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="3.0" spread="0.07" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutX="505.0" layoutY="119.0" opacity="0.65" orientation="VERTICAL" prefHeight="421.0" prefWidth="0.0" />
+      <JFXDrawer layoutX="697.0" layoutY="179.0" />
+      <JFXTextField fx:id="txtQTY" layoutX="109.0" layoutY="452.0" prefHeight="26.0" prefWidth="337.0" promptText="QTY">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbSize" layoutX="572.0" layoutY="236.0" prefHeight="38.0" prefWidth="242.0" promptText="SIZE" />
+      <JFXComboBox fx:id="cmbCatogary" layoutX="571.0" layoutY="400.0" prefHeight="38.0" prefWidth="242.0" promptText="CATEGORIES" />
+   </children>
+</AnchorPane>
