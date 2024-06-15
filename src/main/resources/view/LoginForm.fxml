@@ -44,15 +44,15 @@
             <Font size="26.0" />
          </font>
       </Text>
-      <JFXTextField layoutX="469.0" layoutY="224.0" prefHeight="26.0" prefWidth="371.0" promptText="username">
+      <JFXTextField fx:id="txtUsername" layoutX="469.0" layoutY="224.0" prefHeight="26.0" prefWidth="371.0" promptText="username">
          <font>
             <Font size="16.0" />
          </font></JFXTextField>
-      <JFXTextField layoutX="469.0" layoutY="361.0" prefHeight="26.0" prefWidth="371.0" promptText="password">
+      <JFXTextField fx:id="txtPassword" layoutX="469.0" layoutY="361.0" prefHeight="26.0" prefWidth="371.0" promptText="password">
          <font>
             <Font size="16.0" />
          </font></JFXTextField>
-      <JFXButton layoutX="670.0" layoutY="452.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="LOG IN" textFill="WHITE">
+      <JFXButton layoutX="670.0" layoutY="452.0" onAction="#LogInBtnOnAction" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="LOG IN" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -67,7 +67,7 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Text fill="#6c0cc7" layoutX="707.0" layoutY="582.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click here to create account" textAlignment="CENTER" wrappingWidth="285.33677673339844">
+      <Text fill="#6c0cc7" layoutX="707.0" layoutY="582.0" onDragDetected="#createAccountBtnOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Click here to create account" textAlignment="CENTER" wrappingWidth="285.33677673339844">
          <font>
             <Font size="20.0" />
          </font>

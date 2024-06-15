@@ -26,22 +26,22 @@
                   <Font size="42.0" />
                </font>
             </Text>
-            <JFXTextField layoutX="472.0" layoutY="155.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail">
+            <JFXTextField fx:id="txtEMail" layoutX="472.0" layoutY="147.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail">
                <font>
                   <Font size="21.0" />
                </font>
             </JFXTextField>
-            <JFXTextField layoutX="470.0" layoutY="433.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail" text="Re-Enter Password">
+            <JFXTextField layoutX="470.0" layoutY="449.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail" text="Re-Enter Password">
                <font>
                   <Font size="21.0" />
                </font>
             </JFXTextField>
-            <JFXTextField layoutX="472.0" layoutY="337.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail" text="Enter Your Password">
+            <JFXTextField layoutX="472.0" layoutY="341.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail" text="Enter Your Password">
                <font>
                   <Font size="21.0" />
                </font>
             </JFXTextField>
-            <JFXTextField layoutX="472.0" layoutY="242.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail" text="Enter Username">
+            <JFXTextField fx:id="txtUser" layoutX="472.0" layoutY="237.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail" text="Enter Username">
                <font>
                   <Font size="21.0" />
                </font>
@@ -54,6 +54,11 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
+            <Text fill="RED" layoutX="476.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Password should have 8 characters" wrappingWidth="388.83123779296875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
          </children>
       </Group>
       <ImageView fitHeight="50.0" fitWidth="47.0" layoutX="22.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
