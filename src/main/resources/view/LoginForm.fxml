@@ -52,7 +52,7 @@
          <font>
             <Font size="16.0" />
          </font></JFXTextField>
-      <JFXButton layoutX="670.0" layoutY="452.0" onAction="#LogInBtnOnAction" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="LOG IN" textFill="WHITE">
+      <JFXButton layoutX="670.0" layoutY="452.0" onAction="#LogInBtnOnAction" style="-fx-border-radius: 100; -fx-background-color: #c23616;" text="LOG IN" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
