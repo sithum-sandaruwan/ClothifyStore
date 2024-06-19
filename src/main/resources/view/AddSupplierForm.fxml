@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #0984e3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controllers.supplier.AddSupplierFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfc12c" height="68.0" stroke="#eef202" strokeType="INSIDE" width="1088.0" />
+      <Text layoutX="411.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Supplier">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier ID :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtSupID" fill="WHITE" layoutX="187.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtSupName" layoutX="38.0" layoutY="204.0" prefHeight="26.0" prefWidth="337.0" promptText="Enter Supplier Name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupMail" layoutX="36.0" layoutY="302.0" prefHeight="26.0" prefWidth="337.0" promptText="Enter Supplier E-Mail">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupCompany" layoutX="36.0" layoutY="405.0" prefHeight="26.0" prefWidth="337.0" promptText="Enter Supplier Company">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItem" layoutX="37.0" layoutY="505.0" prefHeight="26.0" prefWidth="337.0" promptText="Supplying Item">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <TableView layoutX="419.0" layoutY="131.0" prefHeight="430.0" prefWidth="660.0">
+         <columns>
+            <TableColumn fx:id="colSupID" prefWidth="97.60003662109375" text="ID" />
+            <TableColumn fx:id="colSupName" prefWidth="115.99993896484375" text="Name" />
+            <TableColumn fx:id="colSupMail" prefWidth="126.4000244140625" text="E-Mail" />
+            <TableColumn fx:id="colSupCompany" prefWidth="173.59991455078125" text="Company" />
+            <TableColumn fx:id="colItem" prefWidth="146.400146484375" text="Item" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="716.0" layoutY="624.0" onAction="#btnRegisterOnAction" prefHeight="51.0" prefWidth="118.0" style="-fx-background-color: #f1c40f;" text="Register">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="883.0" layoutY="626.0" onAction="#btnClearFormOnAction" prefHeight="51.0" prefWidth="162.0" style="-fx-border-radius: 80; -fx-background-color: #d63031;" text="Clear Form" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="btnBack" fitHeight="62.0" fitWidth="73.0" layoutX="22.0" layoutY="618.0" mouseTransparent="true" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="3.0" spread="0.07" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutX="395.0" layoutY="102.0" opacity="0.75" orientation="VERTICAL" prefHeight="496.0" prefWidth="4.0" />
+   </children>
+</AnchorPane>

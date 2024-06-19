@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #0984e3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.pos.controllers.products.ViewProductFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfc12c" height="68.0" layoutX="-9.0" layoutY="-1.0" stroke="#eef202" strokeType="INSIDE" width="1103.0" />
+      <Text layoutX="409.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Product">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <TableView layoutX="169.0" layoutY="79.0" prefHeight="618.0" prefWidth="851.0">
+         <columns>
+            <TableColumn fx:id="colEmpID" prefWidth="143.19999313354492" text="ID" />
+            <TableColumn fx:id="colEmpName" prefWidth="156.53329467773438" text="Product Name" />
+            <TableColumn fx:id="colEmpAddress" prefWidth="146.13339233398438" text="Category" />
+            <TableColumn fx:id="colEmpPhone" prefWidth="109.60000610351562" text="Size" />
+            <TableColumn fx:id="colMail" prefWidth="151.7332763671875" text="Price" />
+            <TableColumn fx:id="colMail1" prefWidth="139.19989013671875" text="QTY" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="62.0" fitWidth="73.0" layoutX="6.0" layoutY="645.0" mouseTransparent="true" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="3.0" spread="0.07" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

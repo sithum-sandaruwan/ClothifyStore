@@ -1,5 +1,6 @@
 package edu.icet.pos.bo;
 
+import edu.icet.pos.bo.custom.Impl.*;
 import edu.icet.pos.util.BoType;
 
 public class BoFactory {
@@ -10,12 +11,20 @@ public class BoFactory {
         return instance != null ? instance:(instance=new BoFactory());
     }
 
-//    public <T extends SuperBo>T getBo(BoType type){
-//        switch (type){
-//            case USER:
-//                return (T) new UserBo();
-//            case ORDER:
-//                return (T) new OrderBo();
-//        }
-//    }
+    public <T extends SuperBo>T getBo(BoType type){
+        switch (type){
+            case USER:
+                return (T) new UserBoImpl();
+            case ORDER:
+                return (T) new OrderBoImpl();
+            case PRODUCT:
+                return (T) new ProductBoImpl();
+            case SUPPLIER:
+                return (T) new SupplierBoImpl();
+            case EMPLOYEE:
+                return (T) new EmployeeBoImpl();
+        }
+        return null;
+
+    }
 }
