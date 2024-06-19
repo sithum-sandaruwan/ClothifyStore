@@ -168,12 +168,8 @@ w
 G.idea/sonarlint/issuestore/8/3/83c97b69f1983e71cd804a5894ec167e14452d2c,8\0\803c41fb12a3cab769ec66c457d175aa6bdf5b0c
 w
 G.idea/sonarlint/issuestore/8/4/84e95bd0ea795e5307464eb72e7bd95d9f673c00,3\5\356e6a002afeb5e7f9005a0f3c151fd17729b92e
-p
-@src/main/java/edu/icet/pos/controllers/SignUpFormController.java,c\3\c30ad2114bc174a8b241aed0e5719dd5c7833542
 o
 ?src/main/java/edu/icet/pos/controllers/DashBoardController.java,f\e\fe5122f69a6e39fda48e8f8328a1f0fe289caa38
-o
-?src/main/java/edu/icet/pos/controllers/LoginFormController.java,1\4\142ce526327c2e69f7b3a7ae8347a7878d6f2095
 y
 Isrc/main/java/edu/icet/pos/controllers/employee/AddEmpFormController.java,d\9\d997a87060389d1bf968eabdb04d4fd25faf5446
 É
@@ -386,10 +382,6 @@ Q.idea/sonarlint/securityhotspotstore/0/c/0c0225e236baaec3a0edb17799b59bae8d233f
 Q.idea/sonarlint/securityhotspotstore/b/c/bc70c59af3d710f5101e160764d7dcab24d36289,4\2\42dcfe6fd2ff92f2386d444658982bc25b2a366f
 Å
 Q.idea/sonarlint/securityhotspotstore/b/3/b3da459fcff4650f805bb6e80ec7d919045fc829,d\5\d56055d6d8e9276a9bd51b260f5d8f1492dbc0fe
-Å
-Q.idea/sonarlint/securityhotspotstore/1/4/142ce526327c2e69f7b3a7ae8347a7878d6f2095,3\c\3cd4512ab31c4658dbd3b2797ebcb772bf522349
-Å
-Q.idea/sonarlint/securityhotspotstore/c/3/c30ad2114bc174a8b241aed0e5719dd5c7833542,5\5\553bb255df290ccfb51809c271fcd42528ab1dba
 Å
 Q.idea/sonarlint/securityhotspotstore/f/e/fe5122f69a6e39fda48e8f8328a1f0fe289caa38,1\4\144369673eefadcd4e535de95ca8ff57de062bf7
 w
@@ -872,3 +864,13 @@ u
 Esrc/main/java/edu/icet/pos/controllers/user/SignUpFormController.java,5\c\5cecf873cfebffefee12b004e0b04d8a130aa793
 t
 Dsrc/main/java/edu/icet/pos/controllers/user/LoginFormController.java,6\7\67b916f6642d3017270133a27824055974347441
+^
+.src/main/java/edu/icet/pos/dao/DaoFactory.java,a\f\af5ee4e0bc6fb8c537218749c2080f2e62ec3970
+\
+,src/main/java/edu/icet/pos/dao/SuperDao.java,0\5\05ba6f1a12ae4fa01a2359f3b5e8e250b7dbb727
+\
+,src/main/java/edu/icet/pos/util/DaoType.java,d\0\d0faa0ee4ab3cab5f72b388748974473786bba5c
+b
+2src/main/java/edu/icet/pos/dao/custom/UserDao.java,9\e\9e51212afcf53d9c1ad2513702b4e51c8f1c2f6d
+k
+;src/main/java/edu/icet/pos/dao/custom/impl/UserDaoImpl.java,9\d\9d3cc8151164c6922b75a0ef2f7e146d7c8acf9a

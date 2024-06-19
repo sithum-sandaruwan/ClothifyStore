@@ -1,8 +1,9 @@
 package edu.icet.pos.bo.custom;
 
+import edu.icet.pos.bo.SuperBo;
 import edu.icet.pos.model.Employee;
 
-public interface EmployeeBo {
+public interface EmployeeBo extends SuperBo {
 
     boolean addEmployee(Employee dto);
 
