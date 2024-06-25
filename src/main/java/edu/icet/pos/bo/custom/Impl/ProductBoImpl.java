@@ -1,7 +1,7 @@
 package edu.icet.pos.bo.custom.Impl;
 
 import edu.icet.pos.bo.custom.ProductBo;
-import edu.icet.pos.model.Product;
+import edu.icet.pos.dto.Product;
 
 public class ProductBoImpl  implements ProductBo {
     @Override

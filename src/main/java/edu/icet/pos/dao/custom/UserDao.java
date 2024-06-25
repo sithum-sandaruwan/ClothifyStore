@@ -1,8 +1,9 @@
 package edu.icet.pos.dao.custom;
 
-import edu.icet.pos.model.User;
+import edu.icet.pos.dao.CrudDao;
+import edu.icet.pos.entity.UserEntity;
 
-public interface UserDao {
+public interface   UserDao extends CrudDao<UserEntity> {
 
 
 }

@@ -1,7 +1,7 @@
 package edu.icet.pos.bo.custom;
 
 import edu.icet.pos.bo.SuperBo;
-import edu.icet.pos.model.Employee;
+import edu.icet.pos.dto.Employee;
 
 public interface EmployeeBo extends SuperBo {
 

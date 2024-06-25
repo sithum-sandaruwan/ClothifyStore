@@ -1,7 +1,7 @@
 package edu.icet.pos.bo.custom.Impl;
 
 import edu.icet.pos.bo.custom.OrderBo;
-import edu.icet.pos.model.Order;
+import edu.icet.pos.dto.Order;
 
 public class OrderBoImpl implements OrderBo {
     @Override

@@ -1,7 +1,7 @@
 package edu.icet.pos.bo.custom.Impl;
 
 import edu.icet.pos.bo.custom.EmployeeBo;
-import edu.icet.pos.model.Employee;
+import edu.icet.pos.dto.Employee;
 
 public class EmployeeBoImpl implements EmployeeBo {
     @Override

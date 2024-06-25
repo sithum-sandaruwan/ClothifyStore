@@ -1,6 +1,6 @@
 package edu.icet.pos.bo.custom;
 
-import edu.icet.pos.model.Order;
+import edu.icet.pos.dto.Order;
 
 public interface OrderBo {
 

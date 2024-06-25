@@ -1,6 +1,6 @@
 package edu.icet.pos.bo.custom;
 
-import edu.icet.pos.model.User;
+import edu.icet.pos.dto.User;
 
 public interface UserBo {
 
