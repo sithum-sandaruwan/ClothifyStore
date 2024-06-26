@@ -21,32 +21,27 @@
       <Group>
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="653.0" layoutX="445.0" layoutY="32.0" opacity="0.87" stroke="BLACK" strokeType="INSIDE" width="603.0" />
-            <Text layoutX="689.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up ">
+            <Text layoutX="667.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up ">
                <font>
                   <Font size="42.0" />
                </font>
             </Text>
-            <JFXTextField fx:id="txtEMail" layoutX="472.0" layoutY="147.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail">
+            <JFXTextField fx:id="txtEMail" layoutX="479.0" layoutY="149.0" prefHeight="45.0" prefWidth="469.0" promptText="Enter Your E-Mail">
                <font>
                   <Font size="21.0" />
                </font>
             </JFXTextField>
-            <JFXTextField layoutX="470.0" layoutY="449.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail" text="Re-Enter Password">
+            <JFXTextField fx:id="txtReEnterPassword" layoutX="478.0" layoutY="452.0" prefHeight="45.0" prefWidth="475.0" promptText="Re-Enter Password">
                <font>
                   <Font size="21.0" />
                </font>
             </JFXTextField>
-            <JFXTextField layoutX="472.0" layoutY="341.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail" text="Enter Your Password">
+            <JFXTextField fx:id="txtUser" layoutX="477.0" layoutY="241.0" prefHeight="45.0" prefWidth="475.0" promptText="Enter Username">
                <font>
                   <Font size="21.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtUser" layoutX="472.0" layoutY="237.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter Your E-Mail" text="Enter Username">
-               <font>
-                  <Font size="21.0" />
-               </font>
-            </JFXTextField>
-            <JFXButton layoutX="654.0" layoutY="552.0" onAction="#RegisterBtnOnAction" prefHeight="60.0" prefWidth="133.0" style="-fx-border-radius: 80; -fx-background-color: #d63031;" text="Register" textFill="WHITE">
+            <JFXButton layoutX="684.0" layoutY="556.0" onAction="#RegisterBtnOnAction" prefHeight="60.0" prefWidth="133.0" style="-fx-border-radius: 80; -fx-background-color: #d63031;" text="Register" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -54,14 +49,19 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Text fill="RED" layoutX="476.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Password should have 8 characters" wrappingWidth="388.83123779296875">
+            <Text fill="RED" layoutX="474.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Password should have 8 characters" wrappingWidth="388.83123779296875">
                <font>
                   <Font size="20.0" />
                </font>
             </Text>
+            <JFXTextField fx:id="txtPassword" layoutX="479.0" layoutY="334.0" prefHeight="45.0" prefWidth="475.0" promptText="Enter Password">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXTextField>
          </children>
       </Group>
-      <ImageView fitHeight="50.0" fitWidth="47.0" layoutX="22.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="50.0" fitWidth="47.0" layoutX="22.0" layoutY="21.0" onMouseClicked="#BackBtnOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/back.png" />
          </image>
