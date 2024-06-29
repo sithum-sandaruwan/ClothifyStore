@@ -15,7 +15,7 @@
             <Font size="46.0" />
          </font>
       </Text>
-      <ImageView fitHeight="54.0" fitWidth="63.0" layoutX="23.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="54.0" fitWidth="63.0" layoutX="23.0" layoutY="25.0" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/back.png" />
          </image>
@@ -28,23 +28,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="802.0" layoutY="333.0" onAction="#btnUpdateDetailsOnAction" prefHeight="59.0" prefWidth="231.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Update Details" textFill="WHITE">
-         <font>
-            <Font size="24.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
-      <JFXButton layoutX="823.0" layoutY="476.0" onAction="#btnRemoveOnAction" prefHeight="59.0" prefWidth="198.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Remove Details" textFill="WHITE">
-         <font>
-            <Font size="24.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
-      <JFXButton layoutX="672.0" layoutY="611.0" onAction="#btnViewOnAction" prefHeight="59.0" prefWidth="199.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="View Details" textFill="WHITE">
+      <JFXButton layoutX="753.0" layoutY="350.0" onAction="#btnUpdateDetailsOnAction" prefHeight="60.0" prefWidth="310.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Update &amp; Remove Details" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
