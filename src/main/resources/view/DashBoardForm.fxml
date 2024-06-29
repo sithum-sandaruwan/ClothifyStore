@@ -14,7 +14,7 @@
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="469.0" layoutY="550.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="468.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
-      <JFXButton layoutX="864.0" layoutY="278.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="Suppliers" textFill="WHITE">
+      <JFXButton layoutX="864.0" layoutY="278.0" onAction="#SupplierBtnOnAction" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="Suppliers" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -23,7 +23,7 @@
          </cursor>
       </JFXButton>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="470.0" layoutY="376.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
-      <JFXButton layoutX="867.0" layoutY="458.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="Products" textFill="WHITE">
+      <JFXButton layoutX="867.0" layoutY="458.0" onAction="#ProductBtnOnAction" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="Products" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -31,7 +31,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="866.0" layoutY="638.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="Orders" textFill="WHITE">
+      <JFXButton layoutX="866.0" layoutY="638.0" onAction="#OrdersBtnOnAction" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 80; -fx-background-color: #c23616;" text="Orders" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -97,7 +97,7 @@
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cbeed" height="156.0" layoutX="467.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
-      <JFXButton layoutX="862.0" layoutY="96.0" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Employees" textFill="WHITE">
+      <JFXButton layoutX="862.0" layoutY="96.0" onAction="#EmployeeBtnOnAction" prefHeight="59.0" prefWidth="156.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Employees" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -110,7 +110,7 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="874.0" layoutY="26.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
+      <JFXTextField fx:id="NumOfEmpToday" editable="false" focusColor="#8cbeed" layoutX="874.0" layoutY="26.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
          <font>
             <Font size="21.0" />
          </font></JFXTextField>
@@ -129,25 +129,30 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <ImageView fitHeight="61.0" fitWidth="43.0" layoutX="24.0" layoutY="652.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="61.0" fitWidth="43.0" layoutX="24.0" layoutY="652.0" onMouseClicked="#BackBtnOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/back.png" />
          </image>
       </ImageView>
-      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="863.0" layoutY="210.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
+      <JFXTextField fx:id="NumOfSupToday" editable="false" focusColor="#8cbeed" layoutX="863.0" layoutY="210.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
          <font>
             <Font size="21.0" />
          </font>
       </JFXTextField>
-      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="858.0" layoutY="396.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
+      <JFXTextField fx:id="NumOfProToday" editable="false" focusColor="#8cbeed" layoutX="858.0" layoutY="396.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
          <font>
             <Font size="21.0" />
          </font>
       </JFXTextField>
-      <JFXTextField editable="false" focusColor="#8cbeed" layoutX="837.0" layoutY="564.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
+      <JFXTextField fx:id="NumOfOrderToday" editable="false" focusColor="#8cbeed" layoutX="837.0" layoutY="564.0" prefHeight="31.0" prefWidth="140.0" promptText="000" unFocusColor="#8cbeed">
          <font>
             <Font size="21.0" />
          </font>
       </JFXTextField>
+      <Text fx:id="UserId" layoutX="149.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000" wrappingWidth="68.92428588867188">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

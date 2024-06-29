@@ -20,7 +20,7 @@
             <Image url="@../assets/back.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="619.0" layoutY="198.0" prefHeight="59.0" prefWidth="249.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Add New Employee" textFill="WHITE">
+      <JFXButton layoutX="619.0" layoutY="198.0" onAction="#btnAddNewEmpOnAction" prefHeight="59.0" prefWidth="249.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Add New Employee" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -28,7 +28,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="802.0" layoutY="333.0" prefHeight="59.0" prefWidth="231.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Update Details" textFill="WHITE">
+      <JFXButton layoutX="802.0" layoutY="333.0" onAction="#btnUpdateDetailsOnAction" prefHeight="59.0" prefWidth="231.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Update Details" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -36,7 +36,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="823.0" layoutY="476.0" prefHeight="59.0" prefWidth="198.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Remove Details" textFill="WHITE">
+      <JFXButton layoutX="823.0" layoutY="476.0" onAction="#btnRemoveOnAction" prefHeight="59.0" prefWidth="198.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Remove Details" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -44,7 +44,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="672.0" layoutY="611.0" prefHeight="59.0" prefWidth="199.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="View Details" textFill="WHITE">
+      <JFXButton layoutX="672.0" layoutY="611.0" onAction="#btnViewOnAction" prefHeight="59.0" prefWidth="199.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="View Details" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>

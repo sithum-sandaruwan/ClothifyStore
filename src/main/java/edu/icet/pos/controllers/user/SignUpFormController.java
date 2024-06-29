@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -25,12 +26,14 @@ public class SignUpFormController {
 
     @FXML
     private JFXTextField txtUser;
+    private Stage stage;
 
     @FXML
     void BackBtnOnAction(MouseEvent event) throws IOException {
-        Parent load = new FXMLLoader(getClass().getResource("/view/LogInForm.fxml")).load();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(load));
+        Parent load = FXMLLoader.load(getClass().getResource("/view/LogInForm.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(load);
+        stage.setScene(scene);
         stage.show();
     }
 
