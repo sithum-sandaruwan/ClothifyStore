@@ -39,6 +39,8 @@ public class SignUpFormController {
 
     @FXML
     void RegisterBtnOnAction(ActionEvent event) {
+
+        String sql ="INSERT INTO User Values(?,?,?,?)";
         new Alert(Alert.AlertType.INFORMATION,"Registration Successs").show();
     }
 
