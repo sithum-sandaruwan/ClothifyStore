@@ -33,7 +33,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="792.0" layoutY="390.0" onAction="#btnViewOnAction" prefHeight="59.0" prefWidth="249.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="View Details" textFill="WHITE">
+      <JFXButton layoutX="792.0" layoutY="390.0" onAction="#btnUpdateOnAction" prefHeight="59.0" prefWidth="249.0" style="-fx-border-radius: 50; -fx-background-color: #c23616;" text="Update Details" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>

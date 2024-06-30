@@ -26,7 +26,7 @@ public class ManageProductsFormController {
 
     @FXML
     void btnBackOnAction(MouseEvent event) throws IOException {
-        Parent load = FXMLLoader.load(getClass().getResource("/view/ManageProductsForm.fxml"));
+        Parent load = FXMLLoader.load(getClass().getResource("/view/DashBoardForm.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(load);
         stage.setScene(scene);

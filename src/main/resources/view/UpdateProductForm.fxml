@@ -87,7 +87,7 @@
             <Font size="21.0" />
          </font>
       </JFXTextField>
-      <ImageView fx:id="btnBack" fitHeight="62.0" fitWidth="73.0" layoutX="10.0" layoutY="651.0" mouseTransparent="true" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="btnBack" fitHeight="62.0" fitWidth="73.0" layoutX="10.0" layoutY="651.0" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/back.png" />
          </image>
