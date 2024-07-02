@@ -20,5 +20,5 @@ public class OrderEntity {
     private String id;
     private String items;
     private String payment_type;
-    private Double total_coset;
+    private Double total_cost;
 }
