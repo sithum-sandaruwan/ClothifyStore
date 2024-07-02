@@ -18,7 +18,7 @@ public class DBConnection {
         return connection;
     }
 
-    private static DBConnection getInstance() throws SQLException, ClassNotFoundException {
+    public static DBConnection getInstance() throws SQLException, ClassNotFoundException {
         if (instance == null) {
             return instance = new DBConnection();
         }

@@ -1,6 +1,7 @@
 package edu.icet.pos.util;
 
-import edu.icet.pos.entity.UserEntity;
+import edu.icet.pos.dto.Employee;
+import edu.icet.pos.entity.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -20,6 +21,10 @@ public class HibernateUtil {
 
         Metadata metaData = new MetadataSources(build)
                 .addAnnotatedClass(UserEntity.class)
+                .addAnnotatedClass(EmployeeEntity.class)
+                .addAnnotatedClass(OrderEntity.class)
+                .addAnnotatedClass(ProductEntity.class)
+                .addAnnotatedClass(SupplierEntity.class)
                 .getMetadataBuilder()
                 .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                 .build();
