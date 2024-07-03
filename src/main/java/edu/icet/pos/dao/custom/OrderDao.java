@@ -1,4 +1,7 @@
 package edu.icet.pos.dao.custom;
 
-public interface OrderDao {
+import edu.icet.pos.dao.CrudDao;
+import edu.icet.pos.entity.OrderEntity;
+
+public interface OrderDao extends CrudDao<OrderEntity> {
 }
