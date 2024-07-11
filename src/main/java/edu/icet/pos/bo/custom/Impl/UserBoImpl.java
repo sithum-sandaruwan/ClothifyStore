@@ -38,9 +38,10 @@ public class UserBoImpl implements UserBo {
     }
 
     @Override
-    public void generateNewUserID() {
+    public String generateNewUserID() {
 
         userDao.generateNewUserID();
 
+        return null;
     }
 }

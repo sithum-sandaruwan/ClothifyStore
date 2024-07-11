@@ -12,5 +12,5 @@ public interface UserBo {
 
     boolean deleteUser(String id);
 
-    void generateNewUserID();
+    String generateNewUserID();
 }

@@ -55,15 +55,27 @@ public class UserDaoImpl implements UserDao {
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
 
-        String hql = "FROM user ORDER BY id DESC LIMIT 1";
-        Query<UserEntity> query = session.createQuery(hql, UserEntity.class);
 
-//        if (query.list().isEmpty()){
-//            return new UserEntity();
-//        }
-//        return query.list().get(0);
+        try {
+            String hql = "FROM user ORDER BY id DESC LIMIT 1";
+            Query<UserEntity> query = session.createQuery(hql, UserEntity.class);
 
-        return null;
+            if (query.list().isEmpty()){
+                return new UserEntity();
+            }
+            return query.list().get(0);
+
+        }catch (Exception e){
+            e.printStackTrace();
+            transaction.rollback();
+            return null;
+        }finally {
+            session.close();
+        }
+
+
+
+        
 
 
     }

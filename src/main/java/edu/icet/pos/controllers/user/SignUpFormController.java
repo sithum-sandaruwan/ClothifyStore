@@ -36,6 +36,8 @@ public class SignUpFormController {
 
     UserBo userBo = new UserBoImpl();
 
+    User userDto = new User();
+
     @FXML
     void BackBtnOnAction(MouseEvent event) throws IOException {
         Parent load = FXMLLoader.load(getClass().getResource("/view/LogInForm.fxml"));
@@ -47,15 +49,17 @@ public class SignUpFormController {
 
     @FXML
     void RegisterBtnOnAction(ActionEvent event) {
-        generateNextID();
-        for (User userDto :  )
+        String userID = generateNextID();
+        userDto.setU_id(userID);
+
         new Alert(Alert.AlertType.INFORMATION,"Registration Successs").show();
     }
 
-    private void generateNextID() {
+    private String generateNextID() {
 
-        userBo.generateNewUserID();
+        String userID = userBo.generateNewUserID();
 
+        return userID;
     }
 
 }
