@@ -1,6 +1,10 @@
 package edu.icet.pos.controllers.user;
 
 import com.jfoenix.controls.JFXTextField;
+import edu.icet.pos.bo.custom.Impl.UserBoImpl;
+import edu.icet.pos.bo.custom.UserBo;
+import edu.icet.pos.dto.User;
+import edu.icet.pos.entity.UserEntity;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -28,6 +32,10 @@ public class SignUpFormController {
     private JFXTextField txtUser;
     private Stage stage;
 
+    UserEntity userEntity =  new UserEntity();
+
+    UserBo userBo = new UserBoImpl();
+
     @FXML
     void BackBtnOnAction(MouseEvent event) throws IOException {
         Parent load = FXMLLoader.load(getClass().getResource("/view/LogInForm.fxml"));
@@ -39,9 +47,15 @@ public class SignUpFormController {
 
     @FXML
     void RegisterBtnOnAction(ActionEvent event) {
-
-
+        generateNextID();
+        for (User userDto :  )
         new Alert(Alert.AlertType.INFORMATION,"Registration Successs").show();
+    }
+
+    private void generateNextID() {
+
+        userBo.generateNewUserID();
+
     }
 
 }

@@ -17,5 +17,11 @@
 
         <!-- DB schema will be updated if needed -->
         <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="edu.icet.pos.entity.UserEntity"/>
+        <mapping class="edu.icet.pos.entity.SupplierEntity"/>
+        <mapping class="edu.icet.pos.entity.OrderEntity"/>
+        <mapping class="edu.icet.pos.entity.ProductEntity"/>
+        <mapping class="edu.icet.pos.entity.EmployeeEntity"/>
     </session-factory>
 </hibernate-configuration>

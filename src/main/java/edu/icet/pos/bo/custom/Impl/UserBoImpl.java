@@ -8,9 +8,22 @@ import edu.icet.pos.entity.UserEntity;
 import edu.icet.pos.util.DaoType;
 import org.modelmapper.ModelMapper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserBoImpl implements UserBo {
 
     private UserDao userDao = DaoFactory.getInstance().getDao(DaoType.USER);
+
+    @Override
+    public List<User> getUserDetails() {
+        List<User> userDtos = new ArrayList<>();
+
+        for (UserEntity userEntity : userDao.getAll() ){
+
+        }
+        return null;
+    }
 
     @Override
     public boolean addUser(User dto) {
@@ -22,5 +35,12 @@ public class UserBoImpl implements UserBo {
     public boolean deleteUser(String id) {
 
         return false;
+    }
+
+    @Override
+    public void generateNewUserID() {
+
+        userDao.generateNewUserID();
+
     }
 }
