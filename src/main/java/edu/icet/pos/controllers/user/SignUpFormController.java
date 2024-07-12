@@ -5,6 +5,7 @@ import edu.icet.pos.bo.custom.Impl.UserBoImpl;
 import edu.icet.pos.bo.custom.UserBo;
 import edu.icet.pos.dto.User;
 import edu.icet.pos.entity.UserEntity;
+import edu.icet.pos.util.RegExPattern;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,6 +17,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 public class SignUpFormController {
 
@@ -40,6 +42,8 @@ public class SignUpFormController {
 
     @FXML
     void BackBtnOnAction(MouseEvent event) throws IOException {
+
+
         Parent load = FXMLLoader.load(getClass().getResource("/view/LogInForm.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(load);
@@ -52,7 +56,14 @@ public class SignUpFormController {
         String userID = generateNextID();
         userDto.setU_id(userID);
 
+        boolean validateUsername = validateUsername(txtUser.getText());
+
         new Alert(Alert.AlertType.INFORMATION,"Registration Successs").show();
+    }
+
+    private boolean validateUsername(String text) {
+        Pattern.matches(RegExPattern.getUsernamePattern().patterj(),text);
+        return false;
     }
 
     private String generateNextID() {
