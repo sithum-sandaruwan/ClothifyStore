@@ -21,6 +21,7 @@ import java.util.regex.Pattern;
 
 public class SignUpFormController {
 
+    public JFXTextField txtUserName;
     @FXML
     private JFXTextField txtEMail;
 
@@ -56,13 +57,45 @@ public class SignUpFormController {
         String userID = generateNextID();
         userDto.setU_id(userID);
 
-        boolean validateUsername = validateUsername(txtUser.getText());
+        boolean validatedEMail = validateEMail(txtEMail.getText());
 
-        new Alert(Alert.AlertType.INFORMATION,"Registration Successs").show();
+        if (validatedEMail) {
+            userDto.setEMail(txtEMail.getText());
+
+            boolean validatedUsername = validateUsername(txtUser.getText());
+            if (validatedUsername){
+                userDto.setUsername(txtEMail.getText());
+
+                boolean validatedPassword = validatePassword(txtPassword.getText());
+                if (validatedPassword){
+                    userDto.setPassword(txtPassword.getText());
+
+                    if (txtPassword.equals(txtReEnterPassword)){
+
+                        boolean saved = userBo.addUser(userDto);
+                        new Alert(Alert.AlertType.INFORMATION,"Registration Successs").show();
+
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+    private boolean validatePassword(String text) {
+        boolean matches = Pattern.matches(RegExPattern.getPasswordPattern().pattern(), text);
+        return matches;
+    }
+
+    private boolean validateEMail(String text) {
+        boolean matches = Pattern.matches(RegExPattern.getEMailPattern().pattern(), text);
+        return matches;
     }
 
     private boolean validateUsername(String text) {
-        Pattern.matches(RegExPattern.getUsernamePattern().patterj(),text);
+        boolean matches = Pattern.matches(RegExPattern.getUsernamePattern().pattern(), text);
         return false;
     }
 

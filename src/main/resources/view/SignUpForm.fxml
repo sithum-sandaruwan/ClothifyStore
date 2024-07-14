@@ -36,7 +36,7 @@
                   <Font size="21.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtUser" layoutX="477.0" layoutY="241.0" prefHeight="45.0" prefWidth="475.0" promptText="Enter Username">
+            <JFXTextField fx:id="txtUserName" layoutX="477.0" layoutY="241.0" prefHeight="45.0" prefWidth="475.0" promptText="Enter Username">
                <font>
                   <Font size="21.0" />
                </font>

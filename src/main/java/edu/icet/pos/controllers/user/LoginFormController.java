@@ -39,6 +39,12 @@ public class LoginFormController {
         String enteredUsername = txtUsername.getText();
         String enteredPassword = encryptPassword (txtPassword.getText());
 
+        Parent load = FXMLLoader.load(getClass().getResource("/view/DashBoardForm.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(load);
+        stage.setScene(scene);
+        stage.show();
+
         for (User userDto : userBo.getUserDetails()){
             if (userDto.getUsername().equals(enteredUsername) && userDto.getPassword().equals(enteredPassword)) {
                 user.setId(user.getId());
@@ -46,11 +52,11 @@ public class LoginFormController {
                 user.setPassword(user.getPassword());
                 user.setEMail(user.getEMail());
 
-                Parent load = FXMLLoader.load(getClass().getResource("/view/DashBoardForm.fxml"));
-                stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-                Scene scene = new Scene(load);
-                stage.setScene(scene);
-                stage.show();
+//                Parent load = FXMLLoader.load(getClass().getResource("/view/DashBoardForm.fxml"));
+//                stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+//                Scene scene = new Scene(load);
+//                stage.setScene(scene);
+//                stage.show();
                 return;
             }
 
